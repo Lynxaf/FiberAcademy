@@ -1,0 +1,338 @@
+header{
+    background: url('./img/gambar\ 2.png') no-repeat center center/cover;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px; 
+    font-family: 'Times New Roman', Times, serif; /* Jenis font */
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeInAnimation 2s ease-in forwards;
+    
+    
+    @keyframes fadeInAnimation {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+.nama{
+    animation: fadeInAnimation 2s ease-in forwards;
+    padding-bottom: 350px;
+}
+
+.judul{
+    opacity: 10;
+    animation: fadeInAnimation 2s ease-in forwards;
+    padding-bottom: 300px;
+}
+
+/* Styling navbar */
+.navbar-sTK {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #b03022; /* Warna merah Telkom */
+    padding: 10px 20px;
+    position: relative;
+  }
+  .logo-pQV {
+    display: flex;
+    align-items: center; /* Menjaga logo sejajar vertikal */
+    justify-content: flex-start; /* Menjaga logo di sisi kiri */
+    gap: 15px; /* Jarak antar logo */
+}
+
+.logo-item img {
+    height: 55px; /* Ukuran logo */
+    width: 55px; /* Membuat logo berbentuk lingkaran */
+    border-radius: 50%; /* Membuat logo menjadi lingkaran */
+    object-fit: cover; /* Menjaga proporsi gambar */
+    background-color: #ffffff; /* Warna latar belakang lingkaran */
+    padding: 5px; /* Memberikan ruang di sekitar logo */
+}
+
+  
+  
+  /* Logo kiri */
+  .logo-left {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%; /* Opsional */
+  }
+  
+  /* Menu navigasi (Home, Course, Instructor) */
+  .navigation {
+    display: flex;
+    gap: 20px; /* Jarak antar link */
+    position: absolute;
+    left: 50%; /* Posisi horizontal tengah */
+    transform: translateX(-50%); /* Koreksi ke tengah */
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 15px;
+    border: 2px solid white; /* Border putih */
+    border-radius: 8px; /* Opsional */
+    background-color: transparent; /* Transparan */
+    transition: 0.3s; /* Animasi hover */
+  }
+  
+  .navigation a:hover {
+    background-color: white;
+    color: #b03022; /* Warna merah Telkom */
+  }
+  
+  /* Logo kanan */
+  .logo-right img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+
+.navbar-sTK .logo-pQV {
+    width: 4rem;
+	height: 4rem;
+	background-image: url('./img/logo.jpg');
+	border: 1px solid rgb(255, 255, 255);
+	background-size: 109% 109%;
+	background-position: -0.18rem -0.18rem;
+}
+ 
+/* Elemen logo kanan atas */
+.logo-right {
+    margin-left: auto; /* Mendorong elemen lainnya ke kiri */
+    margin-right: 10px; /* Memberi jarak dari tepi */
+  }
+  
+  .logo-right img {
+    width: 97px; /* Lebar logo kecil */
+    height: 30px; /* Tinggi logo kecil */
+    object-fit: cover; /* Menjaga proporsi gambar */
+  }
+    .navbar-sTK {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        padding: 0.7rem 1rem; 
+        background-color: #a4291b;
+        box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center; 
+        justify-content: space-between; 
+    }
+    
+    .navbar-sTK .logo-pQV {
+        width: 3rem; 
+        height: 3rem;
+        background-image: url('./img/logo.jpg');
+        border-radius: 50%; 
+        margin-right: 1rem; /
+    }
+    
+    .navbar-sTK .navigation {
+        display: flex;
+        gap: 1rem; 
+    }
+    
+    .navbar-sTK .navigation a {
+        padding: 0.5rem 1rem;
+        background-color: #ffffff;
+        color: #5b0505;
+        font-size: 1rem; 
+        border-radius: 0.5rem;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transition: color 0.3s, transform 0.3s;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .navbar-sTK .navigation a:hover {
+        background-color: #e29b64;
+        transform: translateX(-1px);
+    }
+    
+    /* Responsif untuk layar kecil */
+    @media (max-width: 768px) {
+        .navbar-sTK {
+            flex-direction: flex; 
+            padding: 1rem;
+        }
+    
+        .navbar-sTK .logo-pQV {
+            margin-right: 0; 
+            margin-bottom: 1rem; 
+        }
+    
+        .navbar-sTK .navigation {
+            flex-direction: flex; 
+            gap: 0.5rem; 
+        }
+    
+        .navbar-sTK .navigation a {
+            font-size: 1rem; 
+            padding: 0.5rem; 
+            width: 100%; 
+            text-align: center; 
+        }
+    }
+    
+    /* Responsif untuk layar sangat kecil */
+    @media (max-width: 480px) {
+        .navbar-sTK .navigation a {
+            font-size: 0.3rem; 
+        }
+    
+        .navbar-sTK .logo-pQV {
+            width: 2rem; 
+            height: 2rem;
+        }
+    }
+    
+
+
+.text{
+    opacity: 10;
+    animation: fadeInAnimation 2s ease-in forwards;
+    padding-bottom: 300px;
+
+}
+
+
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.container{
+    padding: 30px;
+    
+}
+.container h4{
+    padding-top: 100px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 40px; /* Ukuran font sesuai keinginan */
+    font-family: 'Times New Roman', Times, serif; /* Jenis font */
+    font-weight: bold; /* Ketebalan font */
+}
+.course{
+    padding-top: 10px;
+}
+
+.course {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Jarak antar card */
+    justify-content: center; /* Menyusun card di tengah */
+}
+
+.card {
+    flex: 1 1 18rem; /* Agar card bisa menyusut hingga 18rem */
+    max-width: 35rem;
+    text-align: center;
+}
+
+.card-join{
+    width: 100%;
+    border: 1px solid rgb(212, 209, 209);
+    border-radius: 20px;
+    padding: 30px;
+    height: auto;
+    background-color: #a4291b;
+    color: white;
+    text-align: center;
+}
+.instructor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px; /* Jarak antar card */
+    justify-content: center; /* Menyusun card di tengah */
+    padding-bottom: 120px;
+}
+footer{
+    background-color: #1B1B1B;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.main {
+    display: flex;
+    justify-content: center; /* Memusatkan konten secara horizontal */
+    align-items: center;     /* Memusatkan konten secara vertikal, jika perlu */
+}
+footer .main{
+   display: flex;
+}
+ table{
+    align-items: center;    
+    text-align: center;   
+ }
+
+.under {
+    display: flex;
+    flex-direction: column; /* Agar teks dan ikon sosmed tersusun secara vertikal */
+    align-items: center;    /* Mencentangkan konten secara horizontal */
+    text-align: center;     /* Mencentangkan teks di dalam elemen */
+    color: white;           /* Warna teks */
+  }
+  
+  .sosmed {
+    display: flex;
+    gap: 10px;              /* Memberikan jarak antar ikon */
+  }
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+    header {
+        height: 100%;
+        font-size: 1.2em; /* Adjust font size if needed */
+    }
+}
+
+/* Small screens (large smartphones) */
+@media (max-width: 768px) {
+    header {
+        height: 100%;
+        font-size: 1em; /* Adjust font size if needed */
+    }
+    /* .card{
+        flex: 1 1 100%;
+    } */
+    .text{
+        padding-top: 50px;
+        font-size: 10px;
+    }
+}
+
+/* Extra small screens (small smartphones) */
+@media (max-width: 576px) {
+    header {
+        height: 100%;
+        font-size: 0.5em; /* Adjust font size if needed */
+    }
+}
+
